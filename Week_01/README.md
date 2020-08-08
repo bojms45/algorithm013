@@ -1,4 +1,5 @@
-`总结：` 
+# 总结：
+
 每天都把对应的作业和实战做一遍，如果5-10分钟内解决不出来，直接看参考答案或者评论区，通常使用国际版leetcode作为参考。
 
 1. 思考5-10分钟
@@ -10,12 +11,14 @@
 7. 所有最优解: 空间换时间，再尽可能优化空间 
 e.g 接雨水: 考虑调用Stack, 时间复杂度从 O(N^2) 降到 O(N), 空间复杂度为O(N)。 可以使用双指针，夹逼方式: Time:(N), Space: O(1) 
 
-Array
+## Array
+
 访问: O(1)
 插入: O(N)
 移除: O(N)
 
-LinkedList
+## LinkedList
+
 常见linkedlist: 单链表，双联表，环链表
 访问: O(N)
 插入: O(1)
@@ -23,25 +26,29 @@ LinkedList
 
 环链表如果找出入口，需要用到快慢指针
 
-Stack
+## Stack
+
 LIFO， 后进先出
 访问: O(N)
 插入: O(1)
 移除: O(1)
 
-Queue
+## Queue
+
 FIFO, 先进先出
 遍历: O(N)
 插入: O(1)
 移除: O(1)
 
-Deque
+## Deque
+
 双端入口, 即可用为Stack, 也可用为Queue，容易操作
 遍历: O(N)
 插入: O(1)
 移除: O(1)
 
-PriorityQueue
+## PriorityQueue
+
 取出元素时，从最小->最大方向来取
 插入：O(1)
 移除: O(lgN)
