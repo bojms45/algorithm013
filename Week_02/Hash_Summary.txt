@@ -1,0 +1,9 @@
+1. map.get(key)
+在hashMap的get方法中，首先需要找到对应key的hash value, 然后在对应buckets的slot中找出来。如果对应的slot里面的元素为null，那么说明当前hashMap并没有此元素。 
+否则，在对应的slot中有元素，我们要通过loop来确定里面是否形成了链表，进而找出我们所需要的key，并把其value return出来
+
+2. map.put(key, val)
+在hashMap的put方法中，和get一样，找出key的hash value， 此时，在对应的slot中，很有可能已经形成链表，如果里面有了链表或者单个元素，这时就发生了哈希碰撞。 
+我们要做的是，在loop中，找出和put进去的key相同的key，并且置换value。
+如果没找到，直接建立新的entry，放到buckets[idx]的首位，无论里面是否存在链表。
+如果当前的size(加入新元素后的) > 所给的balance，那么buckets就要加倍
